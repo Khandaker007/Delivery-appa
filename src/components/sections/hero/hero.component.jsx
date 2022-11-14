@@ -6,12 +6,16 @@ import apple from "../../../assets/icons/apple.svg";
 
 // IMAGES
 import heroImage from "../../../assets/images/hero.png";
+import heroLayout from "../../../assets/layout/hero-layout.svg";
 
 import "./hero.style.scss";
 
 function Hero(props) {
   return (
     <div className="hero">
+      {/* layout start */}
+      <img className="hero__layout" src={heroLayout} alt="layout" />
+      {/* layout end */}
       <div className="hero__content">
         <h1 className="hero__content--header">Delivering for Change</h1>
         <div className="hero__content--download-app">

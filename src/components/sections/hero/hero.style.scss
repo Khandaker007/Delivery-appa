@@ -5,15 +5,24 @@
 .hero {
   height: 100vh;
   padding-inline: 22rem;
+  position: relative;
 
   display: flex;
   justify-content: space-between;
 
+  &__layout {
+    position: absolute;
+    top: -228rem;
+    left: -91rem;
+  }
+
   &__content {
-    background-color: palevioletred;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    position: relative;
+    z-index: 11;
 
     &--header {
       font-weight: 900;
@@ -52,12 +61,13 @@
   }
   &__image {
     align-self: flex-end;
-    background-color: peru;
-    height: 62rem;
+    height: 65rem;
     width: 66rem;
 
+    position: relative;
+    z-index: 11;
+
     img {
-      background-color: palegreen;
       height: 100%;
       width: 80%;
       object-fit: contain;
