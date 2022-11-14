@@ -1,12 +1,41 @@
-.delivery-appa {
-  height: 100vh;
-  background-color: #c1398e;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@import "./sass/mixins.scss";
+@import "./sass/typography.scss";
+@import "./sass/variables.scss";
 
-  h1 {
-    color: white;
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  @include response(big-desktop) {
+    font-size: 70%;
   }
+  @include response(desktop) {
+    font-size: 50%;
+  }
+  @include response(tab-port) {
+    font-size: 40%;
+  }
+  @include response(vp-800) {
+    font-size: 35%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.delivery-appa {
+  position: relative;
 }

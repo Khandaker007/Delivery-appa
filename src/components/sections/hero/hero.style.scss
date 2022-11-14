@@ -1,0 +1,66 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.hero {
+  height: 100vh;
+  padding-inline: 22rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__content {
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--header {
+      font-weight: 900;
+      color: $text-color-white;
+      margin-block: 3rem;
+    }
+    &--download-app {
+      width: min-content;
+      p {
+        font-size: 3rem;
+        color: $text-color-white;
+        white-space: nowrap;
+      }
+      .btn-container {
+        margin-top: 2rem;
+
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          width: 100%;
+          padding: 0.5rem 1rem;
+          font-size: 1.6rem;
+          background-color: transparent;
+          border: 1px solid $text-color-white;
+          color: $text-color-white;
+          border-radius: 1rem;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 1.5rem;
+        }
+      }
+    }
+  }
+  &__image {
+    align-self: flex-end;
+    background-color: peru;
+    height: 62rem;
+    width: 66rem;
+
+    img {
+      background-color: palegreen;
+      height: 100%;
+      width: 80%;
+      object-fit: contain;
+    }
+  }
+}
