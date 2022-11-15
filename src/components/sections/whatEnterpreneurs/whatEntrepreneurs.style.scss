@@ -3,6 +3,28 @@
 @import "../../../sass/variables.scss";
 
 .what-entrepreneurs {
-  height: 100vh;
-  background-color: peachpuff;
+  background-color: $color-purple;
+  padding: 10rem 22rem;
+
+  display: flex;
+
+  .heading-container {
+    flex-grow: 1;
+    align-self: center;
+    h3 {
+      color: $color-blue-light;
+
+      span {
+        display: block;
+      }
+    }
+  }
+  .vl {
+    border-left: 1px dashed $text-color-white;
+  }
+  .slider-container {
+    flex-grow: 3;
+    height: 50rem;
+    padding-inline: 2rem;
+  }
 }

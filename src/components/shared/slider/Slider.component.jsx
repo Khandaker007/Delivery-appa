@@ -16,7 +16,7 @@ import "./slider.style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Sliders({ color }) {
+function Sliders({ color, entSlide }) {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -31,7 +31,7 @@ function Sliders({ color }) {
 
   return (
     <div className="slider">
-      <Slider {...sliderSettings} className="slick-slider">
+      <Slider {...sliderSettings} className={entSlide ? "" : "slick-slider"}>
         {sliderData &&
           sliderData.map((data) => {
             return (
