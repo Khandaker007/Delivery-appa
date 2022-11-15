@@ -1,0 +1,48 @@
+@import "../../sass/mixins.scss";
+@import "../../sass/typography.scss";
+@import "../../sass/variables.scss";
+
+.slider-card {
+  &__comment {
+    text-align: center;
+    p {
+      font-size: 1.8rem;
+      color: $text-color-grey;
+    }
+  }
+  hr {
+    border-top: 1px dashed $color-purple;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+    margin-block: 2rem;
+  }
+  &__person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-container {
+      height: 10rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 2px solid $color-primary;
+      padding: 3px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+    .name {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: $color-primary;
+    }
+    .designation {
+      font-size: 1.2rem;
+      color: $color-purple;
+    }
+  }
+}

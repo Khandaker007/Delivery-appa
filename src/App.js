@@ -4,6 +4,7 @@ import "./App.scss";
 import Header from "./components/header/header.component";
 import Footer from "./components/footer/footer.component";
 import Hero from "./components/sections/hero/hero.component";
+import WhatWeDo from "./components/sections/whatWeDo/whatWeDo.component";
 import PeopleBenefit from "./components/sections/peopleBenefit/peopleBenefit.component";
 import WhatEntrepreneurs from "./components/sections/whatEnterpreneurs/whatEntrepreneurs.component";
 import OurBlog from "./components/sections/ourBlog/ourBlog.component";
@@ -15,6 +16,7 @@ function App() {
     <div className="delivery-appa">
       <Header />
       <Hero />
+      <WhatWeDo />
       <PeopleBenefit />
       <WhatEntrepreneurs />
       <OurBlog />

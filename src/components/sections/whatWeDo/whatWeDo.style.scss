@@ -3,6 +3,50 @@
 @import "../../../sass/variables.scss";
 
 .what-we-do {
-  height: 100vh;
-  background-color: peru;
+  padding-inline: 22rem;
+  padding-block: 5rem;
+  background-color: #66c8cd;
+
+  display: flex;
+
+  .heading {
+    flex-grow: 1;
+    align-self: center;
+
+    span {
+      display: block;
+      font-size: 11rem;
+      color: $color-primary;
+    }
+  }
+  .content {
+    flex-grow: 1;
+
+    &__type {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+
+      &:nth-child(2) {
+        padding-left: 10rem;
+      }
+      &:nth-child(3) {
+        padding-left: 20rem;
+      }
+
+      img {
+        height: 15rem;
+        aspect-ratio: 1;
+      }
+      span {
+        font-size: 3rem;
+        font-weight: 700;
+        color: $text-color-white;
+      }
+    }
+  }
 }

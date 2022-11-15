@@ -3,6 +3,20 @@
 @import "../../../sass/variables.scss";
 
 .people-benefit {
-  height: 100vh;
-  background-color: palevioletred;
+  // height: 100vh;
+  padding: 10rem 35rem;
+
+  h3 {
+    text-align: center;
+    span {
+      display: block;
+
+      &:nth-child(1) {
+        color: $color-purple;
+      }
+      &:nth-child(2) {
+        color: $color-primary;
+      }
+    }
+  }
 }
