@@ -3,6 +3,25 @@
 @import "../../../sass/variables.scss";
 
 .app {
-  height: 100vh;
-  background-color: palegreen;
+  padding: 10rem 22rem 0 15rem;
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+
+  .img-container {
+    height: 100rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      object-position: bottom;
+    }
+  }
+  .content {
+    h3 {
+      white-space: nowrap;
+    }
+  }
 }

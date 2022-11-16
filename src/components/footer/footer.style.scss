@@ -3,6 +3,102 @@
 @import "../../sass/variables.scss";
 
 .footer {
-  height: 50vh;
-  background-color: powderblue;
+  // height: 100vh;
+  background-image: radial-gradient(
+    at top,
+    rgba(181, 61, 144, 1) 0%,
+    rgba(109, 90, 162, 1) 100%
+  );
+
+  .number {
+    padding-block: 10rem 3rem;
+    text-align: center;
+    color: $color-blue-light;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      height: 6rem;
+    }
+  }
+  hr {
+    border-top: 1px dashed $text-color-white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+  }
+  .container {
+    padding: 10rem 22rem;
+
+    display: flex;
+    .content-left {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        .logo-container {
+          height: 13rem;
+          aspect-ratio: 1;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+        p {
+          margin-top: 4rem;
+          color: $text-color-white;
+          font-size: 2rem;
+        }
+      }
+      span {
+        font-size: 1.4rem;
+        margin-top: 8rem;
+        color: $text-color-white;
+      }
+    }
+    .content-right {
+      flex: 2;
+
+      display: flex;
+      justify-content: end;
+
+      .box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+
+        .media-container {
+          font-size: 3rem;
+          color: $color-blue-light;
+
+          display: flex;
+          justify-content: space-between;
+        }
+        h3 {
+          margin-block: 2rem;
+          color: $text-color-white;
+        }
+        p {
+          font-size: 2rem;
+          color: $text-color-white;
+
+          &:nth-child(6) {
+            margin-top: 2rem;
+          }
+        }
+        span {
+          margin-top: auto;
+          font-size: 1.4rem;
+          color: $text-color-white;
+        }
+      }
+    }
+  }
 }

@@ -36,27 +36,6 @@
         color: $text-color-white;
         white-space: nowrap;
       }
-      .btn-container {
-        margin-top: 2rem;
-
-        display: flex;
-        gap: 1rem;
-
-        .btn {
-          width: 100%;
-          padding: 0.5rem 1rem;
-          font-size: 1.6rem;
-          background-color: transparent;
-          border: 1px solid $text-color-white;
-          color: $text-color-white;
-          border-radius: 1rem;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 1.5rem;
-        }
-      }
     }
   }
   &__image {

@@ -16,7 +16,7 @@ function WhatEntrepreneurs(props) {
       </div>
       <div className="vl"></div>
       <div className="slider-container">
-        <h1>Slider</h1>
+        <h1>slider</h1>
       </div>
     </div>
   );
