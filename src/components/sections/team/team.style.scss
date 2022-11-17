@@ -19,5 +19,9 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+
+    @include response(tab-port) {
+      padding-inline: 10rem;
+    }
   }
 }

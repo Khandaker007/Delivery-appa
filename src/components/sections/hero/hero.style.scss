@@ -6,14 +6,38 @@
   height: 100vh;
   padding-inline: 22rem;
   position: relative;
+  overflow: hidden;
 
   display: flex;
   justify-content: space-between;
 
+  @include response(tab-port) {
+    padding-inline: 10rem;
+  }
+
   &__layout {
     position: absolute;
-    top: -240rem;
-    left: -91rem;
+    left: 0;
+    top: -100rem;
+    // top: -240rem;
+    // left: -91rem;
+
+    background-image: radial-gradient(
+      at center left,
+      rgba(181, 61, 144, 1) 0%,
+      rgba(109, 90, 162, 1) 100%
+    );
+    height: 200rem;
+    aspect-ratio: 1;
+
+    clip-path: circle(72.7% at 25% 15%);
+
+    @include response(desktop) {
+      left: 0;
+      top: -80rem;
+    }
+    @include response(tab-port) {
+    }
   }
 
   &__content {

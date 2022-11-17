@@ -14,12 +14,17 @@
     font-size: 1.6rem;
     background-color: transparent;
     border-radius: 1rem;
+    white-space: nowrap;
     cursor: pointer;
 
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+
+    img {
+      height: 5rem;
+    }
   }
   .btn-white {
     border: 1px solid $text-color-white;

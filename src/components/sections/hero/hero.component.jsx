@@ -17,7 +17,8 @@ function Hero(props) {
   return (
     <div className="hero">
       {/* layout start */}
-      <img className="hero__layout" src={heroLayout} alt="layout" />
+      <div className="hero__layout"></div>
+      {/* <img className="hero__layout" src={heroLayout} alt="layout" /> */}
       {/* layout end */}
       <div className="hero__content">
         <h1 className="hero__content--header">Delivering for Change</h1>

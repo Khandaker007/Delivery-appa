@@ -1,0 +1,41 @@
+@import "../../../sass/mixins.scss";
+@import "../../../sass/typography.scss";
+@import "../../../sass/variables.scss";
+
+.entrepreneur-card {
+  display: flex;
+  gap: 5rem;
+  .img-container {
+    height: 13rem;
+    aspect-ratio: 1;
+    padding: 3px;
+    border-radius: 50%;
+    border: 2px solid $color-primary;
+    padding: 3px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .content-container {
+    .description {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      color: $text-color-white;
+      margin-bottom: 3rem;
+    }
+    .name,
+    .designation {
+      display: block;
+      color: $text-color-white;
+    }
+    .name {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .designation {
+      font-size: 1.8rem;
+    }
+  }
+}

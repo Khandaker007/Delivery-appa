@@ -1,8 +1,9 @@
 import React from "react";
 
 // COMPONENT
-import SliderCard from "../../sliderCard/SliderCard.component";
+import SliderCard from "../sliderCard/SliderCard.component";
 import SliderButton from "../sliderButton/SliderButton.component";
+import EntrepreneurCard from "../EntrepreneurCard/EntrepreneurCard.component";
 
 // SLICK
 import Slider from "react-slick";
@@ -16,7 +17,7 @@ import "./slider.style.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-function Sliders({ color, entSlide }) {
+function Sliders({ color, entSlide, enterpreneur }) {
   const sliderSettings = {
     dots: false,
     infinite: true,
@@ -31,18 +32,36 @@ function Sliders({ color, entSlide }) {
 
   return (
     <div className="slider">
-      <Slider {...sliderSettings} className={entSlide ? "" : "slick-slider"}>
-        {sliderData &&
-          sliderData.map((data) => {
-            return (
-              <SliderCard
-                comment={data.description}
-                img={data.image}
-                name={data.name}
-                designation={data.designation}
-              />
-            );
-          })}
+      <Slider
+        {...sliderSettings}
+        className={entSlide ? "arrow-bottom" : "arrow-center"}
+      >
+        {enterpreneur
+          ? sliderData &&
+            sliderData.map((data) => {
+              return (
+                <EntrepreneurCard
+                  key={data.id}
+                  comment={data.description}
+                  img={data.image}
+                  name={data.name}
+                  designation={data.designation}
+                />
+              );
+            })
+          : sliderData &&
+            sliderData.map((data) => {
+              return (
+                // <div>Hello {data.id}</div>
+                <SliderCard
+                  key={data.id}
+                  comment={data.description}
+                  img={data.image}
+                  name={data.name}
+                  designation={data.designation}
+                />
+              );
+            })}
       </Slider>
     </div>
   );

@@ -1,9 +1,7 @@
 import React from "react";
 
 // COMPONENTS
-import SliderCard from "../../sliderCard/SliderCard.component";
 import Sliders from "../../shared/slider/Slider.component";
-import SliderButton from "../../shared/sliderButton/SliderButton.component";
 
 import "./peopleBenefit.style.scss";
 

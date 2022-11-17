@@ -6,6 +6,10 @@
   // height: 100vh;
   padding: 10rem 35rem;
 
+  @include response(tab-port) {
+    padding-inline: 23rem;
+  }
+
   h3 {
     text-align: center;
     span {

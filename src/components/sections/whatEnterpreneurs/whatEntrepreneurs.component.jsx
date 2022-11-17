@@ -2,6 +2,7 @@ import React from "react";
 
 // COMPONENTS
 import Sliders from "../../shared/slider/Slider.component";
+import EntrepreneurCard from "../../shared/EntrepreneurCard/EntrepreneurCard.component";
 
 import "./whatEntrepreneurs.style.scss";
 
@@ -16,7 +17,7 @@ function WhatEntrepreneurs(props) {
       </div>
       <div className="vl"></div>
       <div className="slider-container">
-        <h1>slider</h1>
+        <Sliders color="white" enterpreneur entSlide />
       </div>
     </div>
   );

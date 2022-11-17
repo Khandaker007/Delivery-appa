@@ -3,8 +3,13 @@
 @import "../../../sass/variables.scss";
 
 .slider {
-  .slick-slider {
+  overflow: hidden;
+  .arrow-center {
     display: flex;
     gap: 5rem;
+  }
+  .arrow-bottom {
+    display: flex;
+    align-items: flex-end;
   }
 }
