@@ -11,15 +11,28 @@
   @include response(tab-port) {
     padding-inline: 10rem;
   }
+  @include response(phone) {
+    padding-inline: 5rem;
+
+    flex-direction: column;
+  }
 
   .heading-container {
     flex: 1;
     align-self: center;
+
+    @include response(phone) {
+      margin-bottom: 4rem;
+    }
     h3 {
       color: $color-blue-light;
 
       span {
         display: block;
+
+        @include response(phone) {
+          display: inline;
+        }
       }
     }
   }
@@ -34,5 +47,9 @@
 
     display: flex;
     align-items: center;
+
+    @include response(phone) {
+      padding-inline: 0;
+    }
   }
 }

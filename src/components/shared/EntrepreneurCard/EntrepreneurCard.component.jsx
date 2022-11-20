@@ -14,8 +14,10 @@ function EntrepreneurCard({ comment, img, name, designation }) {
       </div>
       <div className="content-container">
         <p className="description">{comment}</p>
-        <span className="name">{name}</span>
-        <span className="designation">{designation}</span>
+        <div className="box">
+          <span className="name">{name}</span>
+          <span className="designation">{designation}</span>
+        </div>
       </div>
     </div>
   );

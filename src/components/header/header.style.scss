@@ -16,6 +16,9 @@
   @include response(tab-port) {
     padding-inline: 10rem;
   }
+  @include response(phone) {
+    padding-inline: 5rem;
+  }
   &__logo {
     height: 12rem;
     aspect-ratio: 1;
@@ -25,11 +28,94 @@
       object-fit: contain;
     }
   }
+
+  .burger-menu-container {
+    @media screen and (min-width: 600px) {
+      display: none;
+    }
+    .burger-btn {
+      overflow: visible;
+      cursor: pointer;
+      fill: $text-color-white;
+
+      &--1,
+      &--2,
+      &--3 {
+        transition: 0.2s;
+        transform-origin: center center;
+      }
+
+      &.active {
+        // opacity: 0;
+        .burger-btn--1 {
+          transform: translate(-7px, 7px) rotate(45deg);
+        }
+        .burger-btn--2 {
+          transform: translateX(20px);
+          opacity: 0;
+        }
+        .burger-btn--3 {
+          transform: translate(-7px, -7px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
   &__nav {
     font-size: 2.5rem;
     font-weight: 700;
     display: flex;
     gap: 5rem;
+
+    @include response(phone) {
+      // display: none;
+
+      padding: 4rem 5rem;
+      width: 100vw;
+      height: 100vh;
+      background-image: radial-gradient(
+        at top left,
+        rgba(181, 61, 144, 1) 0%,
+        rgba(109, 90, 162, 1) 100%
+      );
+      transition: all 0.2s;
+
+      position: fixed;
+      left: -100%;
+      top: 0;
+
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      width: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    &--logo {
+      height: 12rem;
+      aspect-ratio: 1;
+
+      &--img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+
+      .burger-menu-container {
+        justify-self: flex-end;
+      }
+    }
+    .open {
+    }
 
     &--item {
       list-style: none;
@@ -52,11 +138,35 @@
       text-decoration: none;
       color: $text-color-white;
     }
+
+    &--number {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      &--icon {
+        height: 2.2rem;
+        width: 2.1rem;
+      }
+      &--num {
+        font-size: 2.2rem;
+        font-weight: 500;
+        color: $text-color-white;
+      }
+    }
+  }
+  .open {
+    @include response(phone) {
+      left: 0;
+    }
   }
   &__number {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+    @media screen and (min-width: 200px) {
+      display: none;
+    }
     &--icon {
       height: 2.2rem;
       width: 2.1rem;

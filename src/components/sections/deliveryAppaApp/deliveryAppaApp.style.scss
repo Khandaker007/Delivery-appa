@@ -13,10 +13,18 @@
     padding-left: 7rem;
     padding-right: 10rem;
   }
+  @include response(phone) {
+    flex-direction: column-reverse;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .img-container {
     height: 100rem;
 
+    @include response(phone) {
+      height: 70rem;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -27,6 +35,9 @@
   .content {
     h3 {
       white-space: nowrap;
+      @include response(phone) {
+        font-size: 3.5rem;
+      }
     }
   }
 }

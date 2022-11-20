@@ -9,6 +9,9 @@
   @include response(tab-port) {
     padding-inline: 23rem;
   }
+  @include response(phone) {
+    padding-inline: 5rem;
+  }
 
   h3 {
     text-align: center;

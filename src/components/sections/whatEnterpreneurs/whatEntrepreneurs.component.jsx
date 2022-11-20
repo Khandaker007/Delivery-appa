@@ -12,7 +12,7 @@ function WhatEntrepreneurs(props) {
       <div className="heading-container">
         <h3>
           <span>What</span>
-          <span>Entrepreneurs</span>
+          <span> Entrepreneurs</span>
         </h3>
       </div>
       <div className="vl"></div>

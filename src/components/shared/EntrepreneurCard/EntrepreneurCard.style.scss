@@ -12,6 +12,10 @@
     border-radius: 50%;
     border: 2px solid $color-primary;
     padding: 3px;
+
+    @include response(phone) {
+      align-self: center;
+    }
     img {
       height: 100%;
       width: 100%;
@@ -19,23 +23,30 @@
     }
   }
   .content-container {
+    @include response(phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     .description {
       font-size: 1.8rem;
       line-height: 1.2;
       color: $text-color-white;
       margin-bottom: 3rem;
     }
-    .name,
-    .designation {
-      display: block;
-      color: $text-color-white;
-    }
-    .name {
-      font-size: 2rem;
-      font-weight: 700;
-    }
-    .designation {
-      font-size: 1.8rem;
+    .box {
+      .name,
+      .designation {
+        display: block;
+        color: $text-color-white;
+      }
+      .name {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      .designation {
+        font-size: 1.8rem;
+      }
     }
   }
 }

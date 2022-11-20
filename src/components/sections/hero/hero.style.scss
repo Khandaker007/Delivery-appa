@@ -14,13 +14,15 @@
   @include response(tab-port) {
     padding-inline: 10rem;
   }
+  @include response(phone) {
+    padding-inline: 5rem;
+    justify-content: center;
+  }
 
   &__layout {
     position: absolute;
     left: 0;
     top: -100rem;
-    // top: -240rem;
-    // left: -91rem;
 
     background-image: radial-gradient(
       at center left,
@@ -33,10 +35,15 @@
     clip-path: circle(72.7% at 25% 15%);
 
     @include response(desktop) {
-      left: 0;
-      top: -80rem;
+      height: 220rem;
+      top: -115rem;
     }
-    @include response(tab-port) {
+    @include response(vp-800) {
+      height: 350rem;
+      left: -90rem;
+    }
+    @include response(phone) {
+      height: 400rem;
     }
   }
 
@@ -52,6 +59,10 @@
       font-weight: 900;
       color: $text-color-white;
       margin-block: 3rem;
+
+      @include response(vp-800) {
+        white-space: nowrap;
+      }
     }
     &--download-app {
       width: min-content;
@@ -69,6 +80,21 @@
 
     position: relative;
     z-index: 11;
+
+    @include response(desktop) {
+      height: 50rem;
+    }
+
+    @include response(vp-800) {
+      height: 80rem;
+      width: 75rem;
+
+      // left: -20rem;
+    }
+
+    @include response(phone) {
+      display: none;
+    }
 
     img {
       height: 100%;

@@ -36,6 +36,8 @@ body {
   font-weight: 300;
   color: $text-color-grey;
   overflow-x: hidden;
+  max-width: 192rem;
+  margin-inline: auto;
 }
 
 .delivery-appa {

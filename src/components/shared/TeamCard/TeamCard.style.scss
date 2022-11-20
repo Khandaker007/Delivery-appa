@@ -5,6 +5,10 @@
 .team-card {
   height: 60rem;
   position: relative;
+
+  @include response(phone) {
+    width: 100%;
+  }
   img {
     height: 100%;
     width: 100%;

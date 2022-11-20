@@ -35,7 +35,6 @@ function Footer(props) {
               elit, sed diam nonummy.
             </p>
           </div>
-          <span>© Delivery Appa - 2022</span>
         </div>
         <div className="content-right">
           <div className="box">
@@ -50,8 +49,11 @@ function Footer(props) {
             <p>Road: 00, Baridhara, Dhaka - 1200</p>
             <p>Bangladesh.</p>
             <p>info@projectdeliveryappa.com</p>
-            <span>© Delivery Appa - 2022</span>
           </div>
+        </div>
+        <div className="copyright">
+          <span>© Delivery Appa - 2022</span>
+          <span>Crafted with JoYY by YY Design</span>
         </div>
       </div>
     </div>
