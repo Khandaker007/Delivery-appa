@@ -76,27 +76,47 @@ function Header(props) {
           </div>
         </div>
         <li className="header__nav--item">
-          <a href="#" className="header__nav--link">
+          <a
+            onClick={() => setMenuOpen(false)}
+            href="/"
+            className="header__nav--link"
+          >
             Home
           </a>
         </li>
         <li className="header__nav--item">
-          <a href="#" className="header__nav--link">
+          <a
+            onClick={() => setMenuOpen(false)}
+            href="#about"
+            className="header__nav--link"
+          >
             About
           </a>
         </li>
         <li className="header__nav--item">
-          <a href="#" className="header__nav--link">
+          <a
+            onClick={() => setMenuOpen(false)}
+            href="#blog"
+            className="header__nav--link"
+          >
             Blog
           </a>
         </li>
         <li className="header__nav--item">
-          <a href="#" className="header__nav--link">
+          <a
+            onClick={() => setMenuOpen(false)}
+            href="#team"
+            className="header__nav--link"
+          >
             Team
           </a>
         </li>
         <li className="header__nav--item">
-          <a href="#" className="header__nav--link">
+          <a
+            onClick={() => setMenuOpen(false)}
+            href="#contact"
+            className="header__nav--link"
+          >
             Contact
           </a>
         </li>

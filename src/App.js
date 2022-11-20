@@ -16,12 +16,16 @@ function App() {
     <div className="delivery-appa">
       <Header />
       <Hero />
+      <a id="about"></a>
       <WhatWeDo />
       <PeopleBenefit />
       <WhatEntrepreneurs />
+      <a id="blog"></a>
       <OurBlog />
       <DeliveryAppaApp />
+      <a id="team"></a>
       <Team />
+      <a id="contact"></a>
       <Footer />
     </div>
   );
