@@ -4,7 +4,7 @@
 
 .people-benefit {
   // height: 100vh;
-  padding: 10rem 35rem;
+  padding: 10rem 33rem;
 
   @include response(tab-port) {
     padding-inline: 23rem;
@@ -14,6 +14,8 @@
   }
 
   h3 {
+    font-size: 6rem;
+    font-weight: 700;
     text-align: center;
     span {
       display: block;

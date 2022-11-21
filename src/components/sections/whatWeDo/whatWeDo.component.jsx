@@ -16,18 +16,42 @@ function WhatWeDo(props) {
           <span>We Do...</span>
         </h2>
       </div>
+      <div className="vl"></div>
       <div className="content">
         <div className="content__type">
           <img src={skillTraining} alt="icon" />
-          <span>Skill Based Training</span>
+          <div className="box">
+            <span>Skill Based Training</span>
+            <p>
+              Project DeliveryAppa is a social initiative by Green Ink to
+              empower the marginalized women living in rural areas by providing
+              them with skill based training and unique employment
+              opportunities.
+            </p>
+          </div>
         </div>
         <div className="content__type">
           <img src={femaleRider} alt="icon" />
-          <span>Female Riders</span>
+          <div className="box">
+            <span>Female Riders</span>
+            <p>
+              DeliveryAppa is an android based mobile application that employs
+              female riders to conduct delivery services of goods from point A
+              to point B in rural areas. 
+            </p>
+          </div>
         </div>
         <div className="content__type">
           <img src={lowCost} alt="icon" />
-          <span>Low Cost</span>
+          <div className="box">
+            <span>Low Cost</span>
+            <p>
+              Project DeliveryAppa caters to the delivery needs of the local
+              aspiring entrepreneurs and small businesses by delivering their
+              products to their customers or consumers at a very affordable cost
+              of BDT 20 per delivery. 
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -3,40 +3,43 @@
 @import "../../../sass/variables.scss";
 
 .hero {
-  height: 100vh;
-  padding-inline: 22rem;
+  height: 117vh;
+  padding-inline: 20rem;
   position: relative;
   overflow: hidden;
 
   display: flex;
-  justify-content: space-between;
+  gap: 2rem;
+  // justify-content: space-between;
 
   @include response(tab-port) {
     padding-inline: 10rem;
   }
   @include response(phone) {
+    height: 100vh;
     padding-inline: 5rem;
     justify-content: center;
   }
 
   &__layout {
     position: absolute;
-    left: 0;
-    top: -100rem;
+    left: -15rem;
+    top: -72rem;
 
-    background-image: radial-gradient(
-      at center left,
-      rgba(181, 61, 144, 1) 0%,
-      rgba(109, 90, 162, 1) 100%
-    );
-    height: 200rem;
+    background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
+    height: 190rem;
     aspect-ratio: 1;
 
     clip-path: circle(72.7% at 25% 15%);
 
+    transform: rotate(20deg);
+
     @include response(desktop) {
-      height: 220rem;
-      top: -115rem;
+      top: -50rem;
+      background-image: radial-gradient(at top left, #ee2783 15%, #6d5aa2 65%);
+    }
+    @media screen and (max-width: 1366px) {
+      top: -60rem;
     }
     @include response(vp-800) {
       height: 350rem;
@@ -48,6 +51,9 @@
   }
 
   &__content {
+    white-space: nowrap;
+    flex: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,13 +61,21 @@
     position: relative;
     z-index: 11;
 
+    @include response(phone) {
+      align-items: center;
+    }
+
     &--header {
+      font-size: 7rem;
       font-weight: 900;
       color: $text-color-white;
       margin-block: 3rem;
 
       @include response(vp-800) {
         white-space: nowrap;
+      }
+      @include response(phone) {
+        font-size: 6rem;
       }
     }
     &--download-app {
@@ -74,22 +88,32 @@
     }
   }
   &__image {
+    flex: 1;
+
     align-self: flex-end;
-    height: 65rem;
-    width: 66rem;
+    height: 99rem;
+    width: 67rem;
 
     position: relative;
     z-index: 11;
 
+    @include response(big-desktop) {
+      height: 82rem;
+    }
+
     @include response(desktop) {
-      height: 50rem;
+      height: 140rem;
+    }
+
+    @include response(tab-port) {
+      height: 150rem;
     }
 
     @include response(vp-800) {
       height: 80rem;
       width: 75rem;
 
-      // left: -20rem;
+      left: -20rem;
     }
 
     @include response(phone) {
@@ -98,8 +122,9 @@
 
     img {
       height: 100%;
-      width: 80%;
+      width: 100%;
       object-fit: contain;
+      object-position: bottom;
     }
   }
 }

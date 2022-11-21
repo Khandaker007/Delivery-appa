@@ -13,6 +13,7 @@ function WhatEntrepreneurs(props) {
         <h3>
           <span>What</span>
           <span> Entrepreneurs</span>
+          <span> Say...</span>
         </h3>
       </div>
       <div className="vl"></div>

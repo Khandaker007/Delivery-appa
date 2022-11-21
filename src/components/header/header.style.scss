@@ -3,7 +3,8 @@
 @import "../../sass/variables.scss";
 
 .header {
-  padding: 4rem 22rem 2rem 22rem;
+  padding: 4rem 20rem 2rem 20rem;
+  border-bottom: 1px dashed $text-color-white;
 
   position: absolute;
   z-index: 111;
