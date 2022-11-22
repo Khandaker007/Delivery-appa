@@ -36,10 +36,9 @@
 
     @include response(desktop) {
       top: -50rem;
-      background-image: radial-gradient(at top left, #ee2783 15%, #6d5aa2 65%);
     }
     @media screen and (max-width: 1366px) {
-      top: -60rem;
+      top: -73rem;
     }
     @include response(vp-800) {
       height: 350rem;
@@ -47,6 +46,9 @@
     }
     @include response(phone) {
       height: 400rem;
+    }
+    @media screen and (min-width: 1920px) {
+      height: 200rem;
     }
   }
 
@@ -97,12 +99,12 @@
     position: relative;
     z-index: 11;
 
-    @include response(big-desktop) {
-      height: 82rem;
+    @media screen and (max-width: 1920px) {
+      height: 99rem;
     }
 
     @include response(desktop) {
-      height: 140rem;
+      height: 75rem;
     }
 
     @include response(tab-port) {
