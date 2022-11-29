@@ -6,7 +6,7 @@
   .heading-container {
     padding: 15rem 20rem 2rem 20rem;
 
-    @include response(tab-port) {
+    @media screen and (max-width: 1024px) {
       padding-inline: 10rem;
     }
     h2 {
@@ -27,7 +27,7 @@
     display: flex;
     gap: 5rem;
 
-    @include response(tab-port) {
+    @media screen and (max-width: 1024px) {
       padding-inline: 7rem;
     }
     @include response(phone) {

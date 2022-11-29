@@ -5,26 +5,26 @@
 .hero {
   height: 117vh;
   padding-inline: 20rem;
+  padding-top: 20rem;
   position: relative;
   overflow: hidden;
 
   display: flex;
-  gap: 2rem;
-  // justify-content: space-between;
 
-  @include response(tab-port) {
+  @media screen and (max-width: 1024px) {
     padding-inline: 10rem;
   }
   @include response(phone) {
     height: 100vh;
     padding-inline: 5rem;
-    justify-content: center;
+    flex-direction: column;
+    gap: 5rem;
   }
 
   &__layout {
     position: absolute;
-    left: -15rem;
-    top: -72rem;
+    left: -20rem;
+    top: -65rem;
 
     background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
     height: 190rem;
@@ -35,25 +35,16 @@
     transform: rotate(20deg);
 
     @include response(desktop) {
-      top: -50rem;
+      left: -10rem;
+      top: -60rem;
     }
-    @media screen and (max-width: 1366px) {
-      top: -73rem;
-    }
-    @include response(vp-800) {
-      height: 350rem;
-      left: -90rem;
-    }
-    @include response(phone) {
-      height: 400rem;
-    }
-    @media screen and (min-width: 1920px) {
-      height: 200rem;
+    @include response(tab-port) {
+      transform: rotate(0);
+      height: 250rem;
     }
   }
 
   &__content {
-    white-space: nowrap;
     flex: 1;
 
     display: flex;
@@ -65,6 +56,7 @@
 
     @include response(phone) {
       align-items: center;
+      justify-content: flex-end;
     }
 
     &--header {
@@ -73,11 +65,21 @@
       color: $text-color-white;
       margin-block: 3rem;
 
-      @include response(vp-800) {
-        white-space: nowrap;
+      @media screen and (max-width: 1440px) {
+        margin-top: -20rem;
       }
       @include response(phone) {
         font-size: 6rem;
+      }
+      @media screen and (max-width: 375px) {
+        font-size: 5.3rem;
+      }
+      @media screen and (max-width: 360px) {
+        font-size: 5.5rem;
+      }
+
+      @media screen and (min-width: 1919px) {
+        margin-top: -20rem;
       }
     }
     &--download-app {
@@ -93,33 +95,20 @@
     flex: 1;
 
     align-self: flex-end;
-    height: 99rem;
-    width: 67rem;
+    height: 100%;
 
     position: relative;
     z-index: 11;
 
-    @media screen and (max-width: 1920px) {
-      height: 99rem;
-    }
-
-    @include response(desktop) {
-      height: 75rem;
-    }
-
-    @include response(tab-port) {
-      height: 150rem;
-    }
-
-    @include response(vp-800) {
-      height: 80rem;
-      width: 75rem;
-
-      left: -20rem;
-    }
-
     @include response(phone) {
-      display: none;
+      height: 80rem;
+    }
+
+    @media screen and (max-width: 375px) {
+      height: 60rem;
+    }
+    @media screen and (max-width: 360px) {
+      height: 60rem;
     }
 
     img {

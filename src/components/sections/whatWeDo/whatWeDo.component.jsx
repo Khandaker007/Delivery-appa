@@ -13,7 +13,7 @@ function WhatWeDo(props) {
       <div className="heading">
         <h2>
           <span>What</span>
-          <span>We Do...</span>
+          <span> We Do...</span>
         </h2>
       </div>
       <div className="vl"></div>

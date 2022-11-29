@@ -9,13 +9,12 @@
   display: flex;
   gap: 5rem;
 
-  @include response(tab-port) {
+  @media screen and (max-width: 1024px) {
     padding-inline: 10rem;
+    flex-direction: column;
   }
   @include response(phone) {
     padding-inline: 5rem;
-
-    flex-direction: column;
   }
 
   .heading-container {
@@ -33,7 +32,7 @@
       span {
         display: block;
 
-        @include response(phone) {
+        @media screen and (max-width: 1024px) {
           display: inline;
         }
       }

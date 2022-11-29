@@ -44,7 +44,7 @@
   .container {
     padding: 10rem 22rem;
 
-    @include response(tab-port) {
+    @media screen and (max-width: 1024px) {
       padding-inline: 10rem;
     }
 

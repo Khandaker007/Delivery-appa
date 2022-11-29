@@ -9,7 +9,7 @@
   align-items: center;
   gap: 5rem;
 
-  @include response(tab-port) {
+  @media screen and (max-width: 1024px) {
     padding-left: 7rem;
     padding-right: 10rem;
   }
@@ -22,7 +22,7 @@
   .img-container {
     height: 100rem;
 
-    @include response(phone) {
+    @media screen and (max-width: 1024px) {
       height: 70rem;
     }
     img {

@@ -5,6 +5,7 @@
 .header {
   padding: 4rem 20rem 2rem 20rem;
   border-bottom: 1px dashed $text-color-white;
+  height: 20rem;
 
   position: absolute;
   z-index: 111;
@@ -14,7 +15,7 @@
   align-items: center;
   justify-content: space-between;
 
-  @include response(tab-port) {
+  @media screen and (max-width: 1024px) {
     padding-inline: 10rem;
   }
   @include response(phone) {
@@ -69,8 +70,6 @@
     gap: 5rem;
 
     @include response(phone) {
-      // display: none;
-
       padding: 4rem 5rem;
       width: 100vw;
       height: 100vh;
@@ -114,8 +113,6 @@
       .burger-menu-container {
         justify-self: flex-end;
       }
-    }
-    .open {
     }
 
     &--item {

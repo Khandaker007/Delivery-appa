@@ -13,8 +13,9 @@
   gap: 4rem;
   justify-content: space-between;
 
-  @include response(tab-port) {
+  @media screen and (max-width: 1024px) {
     padding-inline: 10rem;
+    flex-direction: column;
   }
   @include response(phone) {
     padding-inline: 5rem;
@@ -36,6 +37,11 @@
       color: $color-primary;
       white-space: nowrap;
 
+      @media screen and (max-width: 1024px) {
+        font-size: 12rem;
+        display: inline;
+      }
+
       @include response(phone) {
         font-size: 8rem;
       }
@@ -43,6 +49,10 @@
   }
   .vl {
     border-left: 1px dashed $text-color-white;
+
+    @media screen and (max-width: 1024px) {
+      border-top: 1px dashed $text-color-white;
+    }
   }
   .content {
     flex-grow: 1;
