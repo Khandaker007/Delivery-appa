@@ -94,7 +94,9 @@
   }
 
   &__content {
-    // flex: 1;
+    @include response(tab-port) {
+      flex: 1;
+    }
 
     // display: flex;
     // flex-direction: column;
@@ -123,6 +125,10 @@
       color: $text-color-white;
       margin-top: 3rem;
       margin-bottom: 3rem;
+
+      @include response(desktop) {
+        font-size: 6.5rem;
+      }
 
       @include response(phone) {
         font-size: 5.5rem;
@@ -158,7 +164,9 @@
     }
   }
   &__image {
-    // flex: 1;
+    @include response(tab-port) {
+      flex: 1;
+    }
 
     // align-self: flex-end;
     // height: 100%;
@@ -184,6 +192,7 @@
       height: 100%;
       width: 100%;
       object-fit: contain;
+      object-position: bottom;
     }
   }
 }

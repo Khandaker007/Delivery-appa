@@ -21,6 +21,7 @@
     @include response(phone) {
       align-self: center;
       margin-bottom: 2rem;
+      height: 12rem;
     }
     img {
       height: 100%;
@@ -39,6 +40,10 @@
       line-height: 1.2;
       color: $text-color-white;
       margin-bottom: 3rem;
+
+      @include response(phone) {
+        font-size: 3rem;
+      }
     }
     .box {
       @include response(phone) {
@@ -52,9 +57,17 @@
       .name {
         font-size: 2rem;
         font-weight: 700;
+
+        @include response(phone) {
+          font-size: 3.3rem;
+        }
       }
       .designation {
         font-size: 1.8rem;
+
+        @include response(phone) {
+          font-size: 2.5rem;
+        }
       }
     }
   }

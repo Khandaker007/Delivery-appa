@@ -8,6 +8,10 @@
     p {
       font-size: 2.3rem;
       color: $text-color-grey;
+
+      @include response(phone) {
+        font-size: 3rem;
+      }
     }
   }
   hr {
@@ -39,10 +43,18 @@
       font-size: 2.8rem;
       font-weight: 700;
       color: $color-primary;
+
+      @include response(phone) {
+        font-size: 3.3rem;
+      }
     }
     .designation {
       font-size: 2rem;
       color: $color-purple;
+
+      @include response(phone) {
+        font-size: 2.5rem;
+      }
     }
   }
 }

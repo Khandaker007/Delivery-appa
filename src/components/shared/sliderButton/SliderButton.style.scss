@@ -9,4 +9,9 @@
   img {
     height: 5rem;
   }
+  .icon {
+    @include response(phone) {
+      margin-top: 60rem;
+    }
+  }
 }

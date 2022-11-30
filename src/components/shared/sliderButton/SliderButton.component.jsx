@@ -15,9 +15,9 @@ function SliderButton({ type, color, onClick }) {
   return color === "purple" ? (
     <button type="button" className="arrow-btn" onClick={onClick}>
       {type === "next" ? (
-        <img src={rightArrowPurple} alt="arrow" />
+        <img className="icon" src={rightArrowPurple} alt="arrow" />
       ) : (
-        <img src={leftArrowPurple} alt="arrow" />
+        <img className="icon" src={leftArrowPurple} alt="arrow" />
       )}
     </button>
   ) : (

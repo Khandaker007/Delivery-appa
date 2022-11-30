@@ -3,13 +3,8 @@ import React from "react";
 // COMPONENTS
 import ButtonContainer from "../../shared/ButtonContainer/ButtonContainer.component";
 
-// ICONS
-import playStore from "../../../assets/icons/play-store.svg";
-import apple from "../../../assets/icons/apple.svg";
-
 // IMAGES
 import heroImage from "../../../assets/images/hero.png";
-import heroLayout from "../../../assets/layout/hero-layout.svg";
 
 import "./hero.style.scss";
 

@@ -20,6 +20,7 @@
   @include response(phone) {
     padding-inline: 5rem;
     flex-direction: column;
+    gap: 2rem;
   }
 
   .heading {
@@ -85,7 +86,7 @@
         aspect-ratio: 1;
 
         @include response(phone) {
-          height: 15rem;
+          height: 12rem;
         }
       }
       .box {
@@ -101,10 +102,6 @@
           color: $text-color-white;
 
           transition: all 0.2s;
-
-          @include response(phone) {
-            font-size: 3rem;
-          }
         }
         p {
           font-size: 1.8rem;
@@ -112,7 +109,10 @@
           opacity: 0;
 
           transition: all 0.2s;
-          // display: none;
+
+          @include response(phone) {
+            font-size: 2rem;
+          }
         }
       }
 
