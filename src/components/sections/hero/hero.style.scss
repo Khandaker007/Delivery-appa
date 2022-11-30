@@ -5,9 +5,11 @@
 .hero {
   height: 117vh;
   padding-inline: 20rem;
-  padding-top: 20rem;
+  padding-top: 20vh;
   position: relative;
   overflow: hidden;
+
+  // background-color: #ee2783;
 
   display: flex;
 
@@ -19,12 +21,14 @@
     padding-inline: 5rem;
     flex-direction: column;
     gap: 5rem;
+
+    // background-color: aqua;
   }
 
   &__layout {
     position: absolute;
     left: -20rem;
-    top: -65rem;
+    top: -70rem;
 
     background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
     height: 190rem;
@@ -42,21 +46,36 @@
       transform: rotate(0);
       height: 250rem;
     }
+
+    @include response(phone) {
+      height: 150rem;
+      top: 0;
+      left: -40rem;
+    }
   }
 
   &__content {
-    flex: 1;
+    // flex: 1;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 
     position: relative;
     z-index: 11;
 
+    // background-color: gold;
+
+    // @include response(phone) {
+    //   align-items: center;
+    //   justify-content: flex-end;
+    // }
+
+    // test
+    margin-top: 15rem;
+
     @include response(phone) {
-      align-items: center;
-      justify-content: flex-end;
+      margin-top: 5rem;
     }
 
     &--header {
@@ -65,25 +84,32 @@
       color: $text-color-white;
       margin-block: 3rem;
 
-      @media screen and (max-width: 1440px) {
-        margin-top: -20rem;
-      }
       @include response(phone) {
         font-size: 6rem;
-      }
-      @media screen and (max-width: 375px) {
-        font-size: 5.3rem;
-      }
-      @media screen and (max-width: 360px) {
-        font-size: 5.5rem;
+        text-align: center;
       }
 
-      @media screen and (min-width: 1919px) {
-        margin-top: -20rem;
-      }
+      // @media screen and (max-width: 1440px) {
+      //   margin-top: -20rem;
+      // }
+      // @include response(phone) {
+      //   font-size: 6rem;
+      // }
+      // @media screen and (max-width: 375px) {
+      //   font-size: 5.3rem;
+      // }
+      // @media screen and (max-width: 360px) {
+      //   font-size: 5.5rem;
+      // }
+
+      // @media screen and (min-width: 1919px) {
+      //   margin-top: -20rem;
+      // }
     }
     &--download-app {
       width: min-content;
+      margin-left: auto;
+      margin-right: auto;
       p {
         font-size: 3rem;
         color: $text-color-white;
@@ -92,24 +118,25 @@
     }
   }
   &__image {
-    flex: 1;
+    // flex: 1;
 
-    align-self: flex-end;
-    height: 100%;
+    // align-self: flex-end;
+    // height: 100%;
 
     position: relative;
     z-index: 11;
 
     @include response(phone) {
-      height: 80rem;
+      height: 100%;
+      margin-top: auto;
     }
 
-    @media screen and (max-width: 375px) {
-      height: 60rem;
-    }
-    @media screen and (max-width: 360px) {
-      height: 60rem;
-    }
+    // @media screen and (max-width: 375px) {
+    //   height: 60rem;
+    // }
+    // @media screen and (max-width: 360px) {
+    //   height: 60rem;
+    // }
 
     img {
       height: 100%;

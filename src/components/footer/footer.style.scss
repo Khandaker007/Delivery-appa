@@ -97,7 +97,7 @@
       grid-row: row-start 1 / row-end 1;
 
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
 
       @include response(phone) {
         grid-column: col-start / col-end;
