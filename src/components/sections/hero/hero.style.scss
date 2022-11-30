@@ -25,16 +25,53 @@
     // background-color: aqua;
   }
 
+  // &__layout {
+  //   position: absolute;
+  //   left: -20rem;
+  //   top: -70rem;
+
+  //   background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
+  //   height: 190rem;
+  //   aspect-ratio: 1;
+
+  //   clip-path: circle(72.7% at 25% 15%);
+
+  //   transform: rotate(20deg);
+
+  //   @include response(desktop) {
+  //     left: -10rem;
+  //     top: -60rem;
+  //   }
+  //   @include response(tab-port) {
+  //     transform: rotate(0);
+  //     height: 250rem;
+  //   }
+
+  //   @include response(phone) {
+  //     height: 120rem;
+  //     top: 0;
+  //     left: -40rem;
+  //   }
+  // }
+
   &__layout {
     position: absolute;
     left: -20rem;
     top: -70rem;
 
+    background-image: -o-radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
+
     background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
     height: 190rem;
     aspect-ratio: 1;
 
+    -webkit-clip-path: circle(72.7% at 25% 15%);
+
     clip-path: circle(72.7% at 25% 15%);
+
+    -webkit-transform: rotate(20deg);
+
+    -ms-transform: rotate(20deg);
 
     transform: rotate(20deg);
 
@@ -43,6 +80,8 @@
       top: -60rem;
     }
     @include response(tab-port) {
+      -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
       transform: rotate(0);
       height: 250rem;
     }
