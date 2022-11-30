@@ -7,7 +7,7 @@
   padding-inline: 20rem;
   padding-top: 20vh;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
 
   // background-color: #ee2783;
 
@@ -17,7 +17,7 @@
     padding-inline: 10rem;
   }
   @include response(phone) {
-    height: 100vh;
+    height: max-content;
     padding-inline: 5rem;
     flex-direction: column;
     gap: 5rem;
@@ -85,7 +85,7 @@
       margin-block: 3rem;
 
       @include response(phone) {
-        font-size: 6rem;
+        font-size: 5.5rem;
         text-align: center;
       }
 
