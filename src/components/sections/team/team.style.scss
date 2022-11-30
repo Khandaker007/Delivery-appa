@@ -7,6 +7,10 @@
     padding-top: 15rem;
     padding-bottom: 5rem;
     background-color: $color-primary;
+
+    @include response(phone) {
+      padding: 5rem;
+    }
     h1 {
       font-size: 15rem;
       text-align: center;
@@ -29,7 +33,7 @@
     }
 
     @include response(phone) {
-      padding-inline: 5rem;
+      padding: 5rem;
       flex-wrap: wrap;
       justify-content: center;
       gap: 5rem;

@@ -5,6 +5,11 @@
 .entrepreneur-card {
   display: flex;
   gap: 5rem;
+
+  @include response(phone) {
+    flex-direction: column;
+    gap: 0;
+  }
   .img-container {
     height: 13rem;
     aspect-ratio: 1;
@@ -15,6 +20,7 @@
 
     @include response(phone) {
       align-self: center;
+      margin-bottom: 2rem;
     }
     img {
       height: 100%;
@@ -35,6 +41,9 @@
       margin-bottom: 3rem;
     }
     .box {
+      @include response(phone) {
+        text-align: center;
+      }
       .name,
       .designation {
         display: block;

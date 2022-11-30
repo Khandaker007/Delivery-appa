@@ -20,6 +20,10 @@
     align-items: center;
     gap: 1rem;
 
+    @include response(phone) {
+      padding: 5rem;
+    }
+
     h1 {
       font-size: 8rem;
       @include response(phone) {
@@ -44,17 +48,18 @@
   .container {
     padding: 10rem 22rem;
 
-    @media screen and (max-width: 1024px) {
-      padding-inline: 10rem;
-    }
-
     display: grid;
     grid-template-columns: repeat(2, [col-start] 1fr [col-end]);
     grid-template-rows: repeat(2, [row-start] min-content [row-end]);
 
+    @media screen and (max-width: 1024px) {
+      padding-inline: 10rem;
+    }
+
     @include response(phone) {
       grid-template-columns: [col-start] 1fr [col-end];
       grid-template-columns: repeat(3, [row-start] min-content [row-end]);
+      padding: 5rem;
     }
 
     .content-left {

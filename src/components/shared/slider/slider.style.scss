@@ -7,6 +7,10 @@
   .arrow-center {
     display: flex;
     gap: 5rem;
+
+    @include response(phone) {
+      gap: 2rem;
+    }
   }
   .arrow-bottom {
     display: flex;

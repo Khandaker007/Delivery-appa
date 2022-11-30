@@ -15,8 +15,7 @@
   }
   @include response(phone) {
     flex-direction: column-reverse;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 5rem 5rem 0 5rem;
   }
 
   .img-container {
@@ -24,6 +23,9 @@
 
     @media screen and (max-width: 1024px) {
       height: 70rem;
+    }
+    @include response(phone) {
+      height: 50rem;
     }
     img {
       height: 100%;

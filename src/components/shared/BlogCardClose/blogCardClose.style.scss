@@ -16,6 +16,10 @@
       flex: 1;
     }
 
+    @include response(phone) {
+      height: 20rem;
+    }
+
     img {
       height: 100%;
       width: 100%;
@@ -40,6 +44,10 @@
       align-items: center;
       h4 {
         font-size: 3rem;
+
+        @include response(phone) {
+          font-size: 2.5rem;
+        }
       }
     }
 

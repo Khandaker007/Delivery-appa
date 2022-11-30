@@ -7,7 +7,12 @@
     padding: 15rem 20rem 2rem 20rem;
 
     @media screen and (max-width: 1024px) {
-      padding-inline: 10rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    @include response(phone) {
+      padding: 5rem;
     }
     h2 {
       font-size: 5.9rem;
