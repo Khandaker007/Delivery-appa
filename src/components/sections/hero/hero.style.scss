@@ -7,7 +7,7 @@
   padding-inline: 20rem;
   padding-top: 20vh;
   position: relative;
-  // overflow: hidden;
+  overflow: hidden;
 
   // background-color: #ee2783;
 
@@ -48,7 +48,7 @@
     }
 
     @include response(phone) {
-      height: 150rem;
+      height: 120rem;
       top: 0;
       left: -40rem;
     }
