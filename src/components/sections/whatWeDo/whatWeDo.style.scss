@@ -102,6 +102,14 @@
           color: $text-color-white;
 
           transition: all 0.2s;
+
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+
+          .icon {
+            transition: all 0.2s;
+          }
         }
         p {
           font-size: 1.8rem;
@@ -141,6 +149,9 @@
       &:hover .box p {
         opacity: 1;
         margin-bottom: 0;
+      }
+      &:hover .box span .icon {
+        transform: rotate(180deg);
       }
     }
   }

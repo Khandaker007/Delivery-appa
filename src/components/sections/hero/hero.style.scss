@@ -9,8 +9,6 @@
   position: relative;
   overflow: hidden;
 
-  // background-color: #ee2783;
-
   display: flex;
 
   @media screen and (max-width: 1024px) {
@@ -21,38 +19,7 @@
     padding-inline: 5rem;
     flex-direction: column;
     gap: 5rem;
-
-    // background-color: aqua;
   }
-
-  // &__layout {
-  //   position: absolute;
-  //   left: -20rem;
-  //   top: -70rem;
-
-  //   background-image: radial-gradient(at top left, #ee2783 25%, #6d5aa2 65%);
-  //   height: 190rem;
-  //   aspect-ratio: 1;
-
-  //   clip-path: circle(72.7% at 25% 15%);
-
-  //   transform: rotate(20deg);
-
-  //   @include response(desktop) {
-  //     left: -10rem;
-  //     top: -60rem;
-  //   }
-  //   @include response(tab-port) {
-  //     transform: rotate(0);
-  //     height: 250rem;
-  //   }
-
-  //   @include response(phone) {
-  //     height: 120rem;
-  //     top: 0;
-  //     left: -40rem;
-  //   }
-  // }
 
   &__layout {
     position: absolute;
@@ -94,27 +61,13 @@
   }
 
   &__content {
+    position: relative;
+    z-index: 11;
+    margin-top: 15rem;
+
     @include response(tab-port) {
       flex: 1;
     }
-
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-
-    position: relative;
-    z-index: 11;
-
-    // background-color: gold;
-
-    // @include response(phone) {
-    //   align-items: center;
-    //   justify-content: flex-end;
-    // }
-
-    // test
-    margin-top: 15rem;
-
     @include response(phone) {
       margin-top: 5rem;
     }
@@ -134,23 +87,6 @@
         font-size: 5.5rem;
         text-align: center;
       }
-
-      // @media screen and (max-width: 1440px) {
-      //   margin-top: -20rem;
-      // }
-      // @include response(phone) {
-      //   font-size: 6rem;
-      // }
-      // @media screen and (max-width: 375px) {
-      //   font-size: 5.3rem;
-      // }
-      // @media screen and (max-width: 360px) {
-      //   font-size: 5.5rem;
-      // }
-
-      // @media screen and (min-width: 1919px) {
-      //   margin-top: -20rem;
-      // }
     }
     &--download-app {
       width: min-content;
@@ -168,9 +104,6 @@
       flex: 1;
     }
 
-    // align-self: flex-end;
-    // height: 100%;
-
     position: relative;
     z-index: 11;
 
@@ -180,13 +113,6 @@
 
       display: flex;
     }
-
-    // @media screen and (max-width: 375px) {
-    //   height: 60rem;
-    // }
-    // @media screen and (max-width: 360px) {
-    //   height: 60rem;
-    // }
 
     img {
       height: 100%;

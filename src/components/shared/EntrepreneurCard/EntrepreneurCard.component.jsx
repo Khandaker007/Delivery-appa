@@ -1,8 +1,5 @@
 import React from "react";
 
-// IMAGES
-import entrepreneursImg from "../../../assets/images/slider-img2.png";
-
 // CSS
 import "./EntrepreneurCard.style.scss";
 

@@ -6,8 +6,6 @@ import leftArrowPurple from "../../../assets/icons/left-arrow-purple.svg";
 import rightArrowWhite from "../../../assets/icons/right-arrow-white.svg";
 import leftArrowWhite from "../../../assets/icons/left-arrow-white.svg";
 
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
-
 // CSS
 import "./SliderButton.style.scss";
 

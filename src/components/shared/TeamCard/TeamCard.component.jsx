@@ -8,7 +8,7 @@ import "./TeamCard.style.scss";
 
 function TeamCard(props) {
   return (
-    <div className="team-card">
+    <div className="team-card" data-aos="fade-up">
       <img src={memberImage} alt="member" />
       <div className="mask">
         <p className="name">Name of Team Member</p>

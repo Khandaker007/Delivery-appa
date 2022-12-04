@@ -8,7 +8,7 @@ import "./blogCardOpen.style.scss";
 
 function BlogCardOpen(props) {
   return (
-    <div className="open-card">
+    <div className="open-card" data-aos="fade-right">
       <div className="open-card__image-container">
         <img src={imageOpen} alt="img" />
       </div>

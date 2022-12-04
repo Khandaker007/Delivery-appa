@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+
+import AOS from "aos";
 
 // COMPONENTS
 import Hero from "../../components/sections/hero/hero.component";
@@ -9,10 +11,15 @@ import OurBlog from "../../components/sections/ourBlog/ourBlog.component";
 import DeliveryAppaApp from "../../components/sections/deliveryAppaApp/deliveryAppaApp.component";
 import Team from "../../components/sections/team/team.component";
 
-// STYLE
-import "./home.style.scss";
+import "aos/dist/aos.css";
 
 function Home(props) {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <div className="home">
       <Hero />

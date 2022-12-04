@@ -14,14 +14,14 @@ function Hero(props) {
       {/* layout start */}
       <div className="hero__layout"></div>
       {/* layout end */}
-      <div className="hero__content">
+      <div className="hero__content" data-aos="fade-right">
         <h1 className="hero__content--header">Delivering for Change</h1>
         <div className="hero__content--download-app">
           <p>Download Delivery Appa App</p>
           <ButtonContainer />
         </div>
       </div>
-      <div className="hero__image">
+      <div className="hero__image" data-aos="fade-left">
         <img src={heroImage} alt="hero-img" />
       </div>
     </div>

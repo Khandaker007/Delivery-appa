@@ -8,7 +8,7 @@ import "./blogCardClose.style.scss";
 
 function BlogCardClose(props) {
   return (
-    <div className="close-card">
+    <div className="close-card" data-aos="fade-left">
       <div className="close-card__image-container">
         <img src={imageClose} alt="img" />
       </div>

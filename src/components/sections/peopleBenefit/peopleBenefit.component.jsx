@@ -7,7 +7,7 @@ import "./peopleBenefit.style.scss";
 
 function PeopleBenefit(props) {
   return (
-    <div className="people-benefit">
+    <div className="people-benefit" data-aos="fade-up">
       <h3 className="mb-5">
         <span>People benefitting through Project</span>
         <span>Delivery Appa</span>

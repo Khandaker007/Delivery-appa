@@ -15,7 +15,7 @@ function DeliveryAppaApp(props) {
       <div className="img-container">
         <img src={mobileImage} alt="mobile" />
       </div>
-      <div className="content">
+      <div className="content" data-aos="fade-left">
         <h3>Download Delivery Appa App</h3>
         <ButtonContainer dark />
       </div>

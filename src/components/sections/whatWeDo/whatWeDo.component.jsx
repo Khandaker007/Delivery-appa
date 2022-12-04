@@ -4,6 +4,7 @@ import React from "react";
 import femaleRider from "../../../assets/icons/skill_training.svg";
 import lowCost from "../../../assets/icons/female_rider.svg";
 import skillTraining from "../../../assets/icons/low_cost.svg";
+import { FaAngleDown } from "react-icons/fa";
 
 import "./whatWeDo.style.scss";
 
@@ -18,10 +19,12 @@ function WhatWeDo(props) {
       </div>
       <div className="vl"></div>
       <div className="content">
-        <div className="content__type">
+        <div className="content__type" data-aos="fade-left">
           <img src={skillTraining} alt="icon" />
           <div className="box">
-            <span>Skill Based Training</span>
+            <span className="title">
+              Skill Based Training <FaAngleDown className="icon" />
+            </span>
             <p>
               Project DeliveryAppa is a social initiative by Green Ink to
               empower the marginalized women living in rural areas by providing
@@ -30,10 +33,12 @@ function WhatWeDo(props) {
             </p>
           </div>
         </div>
-        <div className="content__type">
+        <div className="content__type" data-aos="fade-left">
           <img src={femaleRider} alt="icon" />
           <div className="box">
-            <span>Female Riders</span>
+            <span className="title">
+              Female Riders <FaAngleDown className="icon" />
+            </span>
             <p>
               DeliveryAppa is an android based mobile application that employs
               female riders to conduct delivery services of goods from point A
@@ -41,10 +46,12 @@ function WhatWeDo(props) {
             </p>
           </div>
         </div>
-        <div className="content__type">
+        <div className="content__type" data-aos="fade-left">
           <img src={lowCost} alt="icon" />
           <div className="box">
-            <span>Low Cost</span>
+            <span className="title">
+              Low Cost <FaAngleDown className="icon" />
+            </span>
             <p>
               Project DeliveryAppa caters to the delivery needs of the local
               aspiring entrepreneurs and small businesses by delivering their
